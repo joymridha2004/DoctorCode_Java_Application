@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DoctorCode</string>
+    <string name="welcome_text">Welcome,Doctor Code</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="Ask_question">Ask Questions</string>
+    <string name="see_doctor">See Your Doctor</string>
+    <string name="some_advices">Some Advices</string>
+    <string name="important_number">Important NUmber</string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/BackGroundColor"
+    android:id="@+id/dashboard">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@drawable/headershape"
+    android:id="@+id/Doctor_code">
+
+    <TextView
+        android:layout_width="213dp"
+        android:layout_height="66dp"
+        android:layout_centerVertical="true"
+        android:text="@string/dashboard"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/Dashboard"/>
+    <TextView
+        android:id="@+id/Welcome_text"
+        android:layout_below="@id/Dashboard"
+        android:layout_width="213dp"
+        android:layout_height="66dp"
+        android:text="@string/welcome_text"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="15dp"/>
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ask_see_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+      android:layout_below="@+id/Doctor_code"
+        android:padding="40dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ask_button"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/main_activity_button_shape"
+            android:drawableTop="@drawable/question_mark_5838"
+            android:paddingTop="15dp"
+            android:text="@string/Ask_question"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/see_your_doctor"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/main_activity_button_shape"
+            android:drawableTop="@drawable/doctor_svgrepo_com"
+            android:paddingTop="15dp"
+            android:text="@string/see_doctor"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/ask_see_doctor"
+        android:padding="40dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/main_activity_button_shape"
+            android:drawableTop="@drawable/customer_service_svgrepo_com"
+            android:paddingTop="15dp"
+            android:text="@string/some_advices"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/important_number_button"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/main_activity_button_shape"
+            android:drawableTop="@drawable/phone_call_call_svgrepo_com"
+            android:paddingTop="15dp"
+            android:text="@string/important_number"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
