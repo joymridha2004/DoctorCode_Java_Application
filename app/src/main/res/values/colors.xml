@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="LightBlue">#3AC2FA</color>
     <color name="BackGroundColor">#F0FFF0</color>
+    <color name="app_light_blue">#FF00C8F4</color>
 </resources>
