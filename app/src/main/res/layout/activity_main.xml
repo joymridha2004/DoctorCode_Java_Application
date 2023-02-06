@@ -1,127 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/dashboard"
+    <RelativeLayout
+        android:id="@+id/Doctor_code"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white"
-        tools:context=".Main_Activity">
+        android:layout_height="170dp"
+        android:background="@drawable/headershape">
 
-        <RelativeLayout
-            android:id="@+id/Doctor_code"
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:background="@drawable/headershape">
+        <ImageView
+            android:id="@+id/github_link"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/github"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/version_TV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="230dp"
-                android:layout_marginTop="20dp"
-                android:text="@string/version"
-                android:textColor="#80000000"
-                android:textSize="14sp" />
+        <TextView
+            android:id="@+id/Project_Link"
+            android:layout_width="160dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="31dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/version"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/Dashboard"
-                android:layout_width="213dp"
-                android:layout_height="66dp"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="15dp"
-                android:padding="10dp"
-                android:text="@string/dashboard"
-                android:textColor="@color/black"
-                android:textSize="30sp"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/Dashboard"
+            android:layout_width="213dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:padding="10dp"
+            android:text="@string/dashboard"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/Welcome_text"
-                android:layout_width="213dp"
-                android:layout_height="66dp"
-                android:layout_below="@id/Dashboard"
-                android:layout_marginStart="15dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="10dp"
-                android:text="@string/welcome_text"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-
-        </RelativeLayout>
+        <TextView
+            android:id="@+id/Welcome_text"
+            android:layout_width="213dp"
+            android:layout_height="66dp"
+            android:layout_below="@id/Dashboard"
+            android:layout_marginStart="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/welcome_text"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
 
-        <RelativeLayout
-            android:id="@+id/ask_see_doctor"
-            android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:layout_below="@+id/Doctor_code"
-            android:padding="40dp">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/ask_button"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:background="@drawable/main_activity_button_shape"
-                android:drawableTop="@drawable/question_mark_5838"
-                android:elevation="10dp"
-                android:paddingTop="15dp"
-                android:text="@string/Ask_question"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/see_your_doctor"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_alignParentEnd="true"
-                android:background="@drawable/main_activity_button_shape"
-                android:drawableTop="@drawable/doctor_svgrepo_com"
-                android:elevation="10dp"
-                android:paddingTop="15dp"
-                android:text="@string/see_doctor"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/some_Important_Number_Layout"
-            android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:layout_below="@id/ask_see_doctor"
-            android:padding="40dp">
-
-            <androidx.appcompat.widget.AppCompatButton
-
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:background="@drawable/main_activity_button_shape"
-                android:drawableTop="@drawable/customer_service_svgrepo_com"
-                android:elevation="10dp"
-                android:paddingTop="15dp"
-                android:text="@string/some_advices"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/important_number_button"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_alignParentEnd="true"
-                android:background="@drawable/main_activity_button_shape"
-                android:drawableTop="@drawable/phone_call_call_svgrepo_com"
-                android:elevation="10dp"
-                android:paddingTop="15dp"
-                android:text="@string/important_number"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-        </RelativeLayout>
     </RelativeLayout>
-</ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/ask_see_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/Doctor_code"
+        android:padding="40dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ask_button"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/main_activity_button_shape"
+            android:drawableTop="@drawable/question_mark_5838"
+            android:elevation="10dp"
+            android:paddingTop="15dp"
+            android:text="@string/Ask_question"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/see_your_doctor"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/main_activity_button_shape"
+            android:drawableTop="@drawable/doctor_svgrepo_com"
+            android:elevation="10dp"
+            android:paddingTop="15dp"
+            android:text="@string/see_doctor"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/some_Important_Number_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/ask_see_doctor"
+        android:padding="40dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/main_activity_button_shape"
+            android:drawableTop="@drawable/customer_service_svgrepo_com"
+            android:elevation="10dp"
+            android:paddingTop="15dp"
+            android:text="@string/some_advices"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/important_number_button"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/main_activity_button_shape"
+            android:drawableTop="@drawable/phone_call_call_svgrepo_com"
+            android:elevation="10dp"
+            android:paddingTop="15dp"
+            android:text="@string/important_number"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
